@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 # ### Python 1,2,3,4 & 5 :Assignment 1
 
 # ### 2.1. Problem Statement:  PYTHON 1 
@@ -9,22 +6,15 @@
 
 # **Answer**
 
-# In[2]:
-
-
 a = 'I am Pallab Panda'
 b='A Data Science student'
 print(a+'.'+b)
-
 
 # **Note - I have shared the screen shot of first question on given repository.**
 
 # **Question- 2. Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included). The numbers obtained should be printed in a comma-separated sequence on a single line)**
 
 # **Answer**
-
-# In[19]:
-
 
 x=[]
 for i in range(2000, 3201):
@@ -37,9 +27,6 @@ print (x)
 
 # **Answer**
 
-# In[3]:
-
-
 x = input('Your first name please : ')
 y = input('Your last name please : ')
 print(x[::-1],y[::-1])
@@ -48,9 +35,6 @@ print(x[::-1],y[::-1])
 # **Question - 4.Write a Python program to find the volume of a sphere with diameter 12 cm. Formula: V=4/3 π r^3**
 
 # **Answer**
-
-# In[20]:
-
 
 diameter = 12 #diameter
 radius = (diameter/2) #radius
@@ -64,10 +48,6 @@ print(volume)
 # **Question -1.Write a program which accepts a sequence of comma-separated numbers from console and generate a list.**
 
 # **Answer**
-
-# In[21]:
-
-
 values = input("Input some comma seprated numbers : ")
 list = values.split(",")
 print('List : ',list)
@@ -76,10 +56,6 @@ print('List : ',list)
 # **Question - 2. Create the below pattern using nested for loop in Python.**
 
 # **Answer**
-
-# In[6]:
-
-
 for i in range(1,6,1):
     print('*'*i)
 for i in range(4,0,-1):
@@ -89,10 +65,6 @@ for i in range(4,0,-1):
 # **Question - 3. Write a Python program to reverse a word after accepting the input from the user.**
 
 # **Answer**
-
-# In[7]:
-
-
 a = input('Input word : ')
 print(a[::-1])
 
@@ -107,10 +79,6 @@ print(a[::-1])
 # 
 
 # **Answer**
-
-# In[8]:
-
-
 a = ("WE, THE PEOPLE OF INDIA, \n\t"" having solemnly resolved to constitute India into a SOVEREIGN,!\n\t\t"" SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC \n\t\t ""and to secure to all its citizens")
 print(a)
 
@@ -120,10 +88,6 @@ print(a)
 # **Question - 1.1. Write a Python Program to implement your own myreduce() function which works exactly like Python's built-in function reduce()**
 
 # **Answer**
-
-# In[2]:
-
-
 def myreduce(a,b):
     aa = 0
     for i in range(a,b):
@@ -136,10 +100,6 @@ myreduce(1,15)
 # **Question - 1.2. Write a Python program to implement your own myfilter() function which works exactly like Python's built-in function filter()**
 
 # **Answer**
-
-# In[3]:
-
-
 def myfilter(f,s):
     x = []
     for i in s:
@@ -163,8 +123,7 @@ print(list(myfilter((lambda x:x<0),range(-10,10,1))))
 # 
 # [(1, 1), (2, 1), (3, 1), (1, 2), (2, 2), (3, 2), (1, 3), (2, 3), (3, 3)]**
 
-# In[4]:
-
+# **Answer**
 
 # ['A', 'C', 'A', 'D', 'G', 'I', ’L’, ‘ D’]
 #list("ACADGILD")
@@ -173,15 +132,9 @@ x = list("ACADGILD")
 [i for i in x]
 
 
-# In[5]:
-
-
 # ['x', 'xx', 'xxx', 'xxxx', 'y', 'yy', 'yyy', 'yyyy', 'z', 'zz', 'zzz', 'zzzz']
 a=['x','y','z']
 [i*j for i in a for j in range(1,5)]
-
-
-# In[6]:
 
 
 # ['x', 'y', 'z', 'xx', 'yy', 'zz', 'xx', 'yy', 'zz', 'xxxx', 'yyyy', 'zzzz']
@@ -189,23 +142,17 @@ a=['x','y','z']
 [i*j for i in range(1,5) for j in a]
 
 
-# In[7]:
-
 
 # [[2], [3], [4], [3], [4], [5], [4], [5], [6]]
 a = list(range(2,5))
 [[i+j] for i in a for j in range(3) ]
 
 
-# In[8]:
-
 
 # [[2, 3, 4, 5], [3, 4, 5, 6], [4, 5, 6, 7], [5, 6, 7, 8]]
 a = list(range(2,6))
 [[i+j for i in a] for j in range(0,4)]
 
-
-# In[24]:
 
 
 input_list=[1,2,3]
@@ -216,9 +163,6 @@ print(str(result))
 # **Question - 3. Implement a function longestWord() that takes a list of words and returns the longest one.**
 
 # **Answer**
-
-# In[26]:
-
 
 from functools import reduce
 list_words = ["This","is","a","python","assignment"]
@@ -235,9 +179,6 @@ print ('Longest word in array ["This","is","a","python","assignment"] => ' + lon
 # **1.1 Write a Python Program(with class concepts) to find the area of the triangle using the below formula.**
 
 # **Answer**
-
-# In[10]:
-
 
 class Triangle:
     def __init__(self,side1,side2,side3):
@@ -259,9 +200,6 @@ print('Area of the triangle',Triangle(a,b,c).area())
 
 # **Answer**
 
-# In[1]:
-
-
 class list_Utilities:
  def __init__(self, wordlist):
   self.wordlist = wordlist
@@ -279,9 +217,6 @@ print ("New List of Words  => " + str(instance.filter_long_words(3)) )
 
 # **Answer**
 
-# In[13]:
-
-
 def map_to_lengths_for(words):
     lengths = []
     for word in words:
@@ -294,9 +229,6 @@ map_to_lengths_for(words)
 # **Question - 2.2 Write a Python function which takes a character (i.e. a string of length 1) and returns True if it is a vowel, False otherwise.**
 
 # **Answer**
-
-# In[15]:
-
 
 def vowel_or_not(x):
     vowels=['a','e','i','o','u']
@@ -312,9 +244,6 @@ vowel_or_not('b')
 # **Question - 1. Write a function to compute 5/0 and use try/except to catch the exceptions.**
 
 # **Answer**
-
-# In[16]:
-
 
 def divide_function(x,y):
     try:
@@ -345,9 +274,6 @@ divide_function(5,0)
 # Indians watch Cricket.
 
 # **Answer**
-
-# In[17]:
-
 
 sub = ['Americans','Indians']
 ver = ['play','watch']
